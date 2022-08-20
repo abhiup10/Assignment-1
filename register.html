@@ -1,59 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
-    <!-- <link rel="stylesheet" href="e./register.css"> -->
-</head>
-
-<body>
-    <header>
-        <nav class="flexbox">
-            <div class="a1">
-                <div class="logo"></div>
-                <h1 class="a2">&nbsp;&nbsp;&nbsp;FC Barcelona</h1>
+<html>
+    <head>
+      </head>
+      <body>
+        <h1 id="title">Domain selection</h1>
+        <p id="description"> please provide your details to TPO office</P>
+        <form id="survey-form">
+          <div id="form-group">
+     <label id="name-label"> NAME: </label> 
+     <input 
+     type = "text"  
+     name = "name" 
+     id = "name"
+     placeholder = "enter your name"
+     class = "formcontrol"
+     required >
+     </div>
+     <div id="form-group">
+     <label id="email-label"
+     >Email: </label> 
+     <input 
+     type = "email"
+     id = "email"  
+     placeholder = "enter your email-id"
+     class = "formcontrol"
+     required >
+     </div>
+     <div id="form-group">
+     <label id="number-label">contact: </label> 
+     <input 
+     type = "number"
+     id = "number"
+     min = "1000000000" 
+     max = "9999999999" 
+     placeholder = "enter your number"
+     class = "formcontrol"
+     required 
+     >
+     </div>
+     <div class="form-group">
+              <p>Select your Domain</p>
+              <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select current interest</option>
+                <option value="web">web development</option>
+                <option value="app">app development</option>
+                <option value="market">marketing</option>
+                <option value="other">Other</option>
+              </select>
             </div>
-            <div class="z1" style="text-align:center">
-                <h1 class="u1" >Abhishek</h1>
-                <h1 class="u2">Web Developer</h1><br><br>
             </div>
-        </nav>
-    </header>
-    <main>
-        <form>
-            <div class="x2">
-                <div class="x1">
-                    <h1 style="text-align: center;" class="op">Registration form</h1><br><br>
-                    <label class="no">Enter your first name: </label>
-                    <input type="text" placeholder="First name" class="kk"><br><br>
-                    <label class="no">Enter your last name: </label>
-                    <input type="text" placeholder="Last name" class="kk"><br><br>
-                    <label class="no">Enter your email: </label>
-                    &nbsp;<input type="email" placeholder="EMAIL" class="kk"><br><br>
-                    <label class="no">Gender:</label>
-                    <div class="gender">
-                        <input type="checkbox">Male
-                        <input type="checkbox">Female
-                    </div><br>
-                    <label class="no">Enter your number:</label>
-                    <input type="number" placeholder="Number" class="kk"><br><br>
-                    <button id="op">Submit</button>
-                </div>
-                <div class="x3">
-
-                </div>
-            </div>
-        </form>
-    </main><br>
-    <footer>
-        <nav class="flexbox3">
-            <div class="e1"></div>
-            <div class="e2"></div>
-            <div class="e3"></div>
-        </nav>
-    </footer>
-</body>
-
-</html>
+     <div class="form-group">
+              <p>Active Backlogs?</p>
+              <label>
+              <input
+              name= "user-recommanded"
+              value= "sure"
+              type= "radio"
+              class = "right-box"
+              />yes</label>
+              <label>
+              <input
+              name= "user-recommanded"
+              value= "never"
+              type= "radio"
+              class = "right-box"
+              />no</label>
+              </div>
+              
+              <div class="form-group">
+              <p>any suggestion from yous side</p>
+              <textarea
+              id= "suggestion"
+              name= "icprecommanded"
+              class = "input-checkbox"
+              placeholder ="comment here">
+              </textarea>
+    </div>
+    <div class="form-group">
+      <button  type="submit" class="submit-button">
+        submit
+        </button>
+        </body>
+        </html>
